@@ -2,6 +2,11 @@
 
 This adapter is based on the RP2040 microcontroller and supports QMK firmware.
 
+Currently, only the JIS layout is supported.
+
+To create your own keyboard layout, edit the `keymap.c` file. The keyboard matrix (row/column mapping) is provided in the `table-*.txt` files.
+
+
 * QMK firmware source and build files: `<link-to-folder>`
 * PCB layout and schematic: `<link-to-folder>`
 
