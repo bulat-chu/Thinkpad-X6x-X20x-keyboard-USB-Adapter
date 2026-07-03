@@ -26,7 +26,7 @@ To flash a new firmware (`.uf2` file):
 3. Plug the adapter into a USB port.
 4. Release the button.
 5. Copy the `.uf2` file to the `RPI-RP2` drive that appears. The firmware will be flashed automatically, and the adapter will reboot.
-6. To verify that everything works correctly, run:
+6. To verify that everything works correctly, run and press any button:
 
 ```bash
 qmk console
