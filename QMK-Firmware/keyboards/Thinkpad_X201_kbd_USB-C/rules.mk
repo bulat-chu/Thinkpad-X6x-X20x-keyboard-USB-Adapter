@@ -1,0 +1,3 @@
+PS2_MOUSE_ENABLE = yes
+PS2_DRIVER = vendor
+OS_DETECTION_ENABLE = yes
