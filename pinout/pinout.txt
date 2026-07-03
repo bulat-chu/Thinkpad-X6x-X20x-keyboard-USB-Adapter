@@ -1,0 +1,47 @@
+GPIO Mapping
+
+**SENSE:**
+| GPIO | Signal |
+|------|--------|
+| GPIO0 | SENSE5 |
+| GPIO1 | SENSE0 |
+| GPIO2 | SENSE3 |
+| GPIO3 | SENSE2 |
+| GPIO5 | SENSE7 |
+| GPIO6 | SENSE6 |
+| GPIO7 | SENSE1 |
+| GPIO8 | SENSE4 |
+
+**DRV:**
+| GPIO | Signal |
+|------|--------|
+| GPIO12 | DRV13 |
+| GPIO13 | DRV15 |
+| GPIO14 | DRV12 |
+| GPIO15 | DRV14 |
+| GPIO16 | DRV11 |
+| GPIO17 | DRV0 |
+| GPIO18 | DRV9 |
+| GPIO19 | DRV1 |
+| GPIO20 | DRV10 |
+| GPIO21 | DRV2 |
+| GPIO22 | DRV7 |
+| GPIO23 | DRV3 |
+| GPIO24 | DRV6 |
+| GPIO25 | DRV8 |
+| GPIO26 | DRV5 |
+| GPIO27 | DRV4 |
+
+**TrackPoint PS/2:**
+| GPIO | Signal |
+|------|--------|
+| GPIO10 | TP4-DATA-3V3 |
+| GPIO11 | TP4-CLK-3V3 |
+| GPIO29 | TP4-RESET-3V3 |
+
+**etc:**
+| GPIO | Signal |
+|------|--------|
+| GPIO28 | HOTKEY (Fn) |
+| GPIO4 | PWRSWITCH (through R5 0Ω) |
+| GPIO9 | LED-CAPS-LOCK (through R18 100Ω) |
