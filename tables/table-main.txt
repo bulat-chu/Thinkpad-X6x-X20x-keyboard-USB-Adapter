@@ -1,0 +1,124 @@
+JP Specific:
+row=1 col=5		Hankaku/Zenkaku
+row=4 col=5 	Muhenkan
+row=0 col=12	Henkan
+row=4 col=12	Katakana/Hiragana/Romaji
+row=0 col=8		ThinkVantage
+row=3 col=13	Yen
+
+1:
+row=0 col=5 	ESC
+row=7 col=8 	Mute
+row=2 col=8 	VolDn
+row=3 col=8 	VolUp
+row=0 col=8 	ThinkVantage
+
+row=6 col=0 	PrtSc
+row=3 col=0 	ScrLk
+row=5 col=2 	Pause
+
+row=1 col=6 	Insert
+row=1 col=2 	Home
+row=1 col=4 	PgUp
+
+2:
+row=1 col=7		F1
+row=1 col=9 	F2
+row=2 col=9		F3
+row=0 col=9		F4
+
+row=0 col=13 	F5
+row=0 col=14	F6
+row=2 col=12	F7
+row=1 col=12	F8
+
+row=1 col=13	F9
+row=6 col=13	F10
+row=6 col=8		F11
+row=6 col=6		F12
+
+row=1 col=8		Delete
+row=6 col=2		End
+row=6 col=4		PgDn
+
+3:
+row=1 col=5 	Hankaku/Zenkaku
+row=6 col=5 	1
+row=6 col=7	 	2
+row=6 col=9 	3
+row=6 col=11 	4
+row=1 col=11 	5
+row=1 col=15 	6
+row=6 col=15 	7
+row=6 col=14 	8
+row=6 col=12 	9
+row=6 col=10 	0
+row=1 col=10 	-
+row=1 col=14 	^
+row=3 col=13 	¥
+row=2 col=13 	Backspace
+
+4:
+row=2 col=5 	Tab
+row=3 col=5 	q
+row=3 col=7 	w
+row=3 col=9 	e
+row=3 col=11 	r
+row=2 col=11 	t
+row=2 col=15 	y
+row=3 col=15 	u
+row=3 col=14 	i
+row=3 col=12 	o
+row=3 col=10 	p
+row=2 col=10 	@
+row=2 col=14 	[
+row=5 col=13 	Enter
+
+5:
+row=2 col=7 	CapsLock
+row=7 col=5 	a
+row=7 col=7 	s
+row=7 col=9 	d
+row=7 col=11 	f
+row=0 col=11 	g
+row=0 col=15 	h
+row=7 col=15 	j
+row=7 col=14 	k
+row=7 col=12 	l
+row=7 col=10 	;
+row=0 col=10 	:
+row=5 col=10 	]
+
+6:
+row=2 col=3 	R_Shift
+row=5 col=5 	z
+row=5 col=7 	x
+row=5 col=9 	c
+row=5 col=11 	v
+row=4 col=11 	b
+row=4 col=15 	n
+row=5 col=15 	m
+row=5 col=14 	,
+row=5 col=12 	.
+row=4 col=10 	/
+row=4 col=14 	\
+row=5 col=3 	L_Shift
+
+7:
+- - - Fn
+row=1 col=1 	L_Ctrl
+row=3 col=4 	Windows/Super
+row=0 col=0		L_Alt
+row=4 col=5 	Muhenkan
+row=4 col=13 	Space
+row=0 col=12 	Henkan
+row=4 col=12 	Katakana/Hiragana/Romaji
+row=4 col=0 	R_Alt
+row=7 col=4 	Program (Menu)
+row=5 col=1 	R_Ctrl
+row=5 col=4 	Browser Back
+row=0 col=2 	Up
+row=4 col=4 	Browser Forward
+row=4 col=6 	Right
+row=4 col=8 	Down
+row=4 col=2 	Left
