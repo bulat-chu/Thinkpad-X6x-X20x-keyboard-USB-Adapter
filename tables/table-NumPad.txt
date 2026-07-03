@@ -1,0 +1,118 @@
+1:
+row=0 col=5 	None
+row=7 col=8 	None
+row=2 col=8 	None
+row=3 col=8 	None
+row=0 col=8 	None
+
+row=6 col=0 	None
+row=3 col=0 	NumLk
+row=5 col=2 	None
+
+row=1 col=6 	None
+row=1 col=2 	None
+row=1 col=4 	None
+
+2:
+row=1 col=7		None
+row=1 col=9 	None
+row=2 col=9		None
+row=0 col=9		None
+
+row=0 col=13 	None
+row=0 col=14	None
+row=2 col=12	None
+row=1 col=12	None
+
+row=1 col=13	None
+row=6 col=13	None
+row=6 col=8		None
+row=6 col=6		None
+
+row=1 col=8		None
+row=6 col=2		None
+row=6 col=4		None
+
+3:
+row=1 col=5 	None
+row=6 col=5 	None
+row=6 col=7	 	None
+row=6 col=9 	None
+row=6 col=11 	None
+row=1 col=11 	None
+row=1 col=15 	None
+row=6 col=15 	NumPad 7
+row=6 col=14 	NumPad 8
+row=6 col=12 	NumPad 9
+row=6 col=10 	NumPad /
+row=1 col=10 	None
+row=1 col=14 	None
+row=3 col=13 	None
+row=2 col=13 	None
+
+4:
+row=2 col=5 	None
+row=3 col=5 	None
+row=3 col=7 	None
+row=3 col=9 	None
+row=3 col=11 	None
+row=2 col=11 	None
+row=2 col=15 	None
+row=3 col=15 	NumPad 4
+row=3 col=14 	NumPad 5 
+row=3 col=12 	NumPad 6
+row=3 col=10 	NumPad * 
+row=2 col=10 	NumPad Enter
+row=2 col=14 	None
+row=5 col=13 	None
+
+5:
+row=2 col=7 	None
+row=7 col=5 	None
+row=7 col=7 	None
+row=7 col=9 	None
+row=7 col=11 	None
+row=0 col=11 	None
+row=0 col=15 	None
+row=7 col=15 	NumPad 1
+row=7 col=14 	NumPad 2
+row=7 col=12 	NumPad 3
+row=7 col=10 	NumPad -
+row=0 col=10 	None
+row=5 col=10 	None
+
+6:
+row=2 col=3 	None
+row=5 col=5 	None
+row=5 col=7 	None
+row=5 col=9 	None
+row=5 col=11 	None
+row=4 col=11 	None
+row=4 col=15 	None
+row=5 col=15 	NumPad 0
+row=5 col=14 	None
+row=5 col=12 	NumPad .
+row=4 col=10 	NumPad +
+row=4 col=14 	None
+row=5 col=3 	None
+
+7:
+- - - 			Fn
+row=1 col=1	 	None
+row=3 col=4 	None
+row=0 col=0 	None
+row=4 col=5 	None
+row=4 col=13 	None
+row=0 col=12 	None
+row=4 col=12 	None
+row=4 col=0 	None
+row=7 col=4 	None
+row=5 col=1 	None
+row=5 col=4 	None
+row=0 col=2 	None
+row=4 col=4 	None
+row=4 col=6 	None 
+row=4 col=8 	None
+row=4 col=2 	None
+
+
