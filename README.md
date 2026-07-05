@@ -7,18 +7,24 @@ Currently, only the JIS layout is supported.
 To create your own keyboard layout, edit the `keymap.c` file. The keyboard matrix (row/column mapping) is provided in the `table-*.txt` files.
 
 
-* QMK firmware source and build files: `<link-to-folder>`
-* PCB layout and schematic: `<link-to-folder>`
+**QMK firmware source and build files:**
+[`Link-to-folder`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/QMK-Firmware/keyboards/Thinkpad_X201_kbd_USB-C)
 
 **Schematic**
-`<Circuit-scheme-file-link>`
+[`Circuit-scheme-file`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/Scheme-PCB/Thinkpad_X201_kbd_USB-C-Scheme.pdf)
 
 **PCB layout**
-`<PCB-layout-file-link>`
+[`PCB-layout_gerber-files`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/Scheme-PCB/PCB-manufacturing-files)
+
+**PCB layout**
+[`BOM`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/Scheme-PCB/BOM_Thinkpad_X201_kbd_USB-C-Scheme.xlsx)
+
 
 ## Photos
 
-`<photo-file-link>`
+<br>![](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/photo/IMG_20260705_233229_1.jpg)
+<br>![](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/photo/IMG_20260705_233512_1.jpg)
+<br>![](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/photo/IMG_20260705_233740_1.jpg)
 
 ## Hints
 
