@@ -10,11 +10,13 @@ To create your own keyboard layout, edit the `keymap.c` file. The keyboard matri
 **QMK firmware source and build files:**
 [`Link-to-folder`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/QMK-Firmware/keyboards/Thinkpad_X201_kbd_USB-C)
 
+[`Modified suspend.c file fot ThinkPad like wakeup by pressing only Fn or Power button`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/QMK-Firmware/platforms/suspend.c)
+
 **Schematic**
-[`Circuit-scheme-file`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/Scheme-PCB/Thinkpad_X201_kbd_USB-C-Scheme.pdf)
+[`Circuit scheme file`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/Scheme-PCB/Thinkpad_X201_kbd_USB-C-Scheme.pdf)
 
 **PCB layout**
-[`PCB-layout_gerber-files`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/Scheme-PCB/PCB-manufacturing-files)
+[`PCB layout - gerber files`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/Scheme-PCB/PCB-manufacturing-files)
 
 **PCB layout**
 [`BOM`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/Scheme-PCB/BOM_Thinkpad_X201_kbd_USB-C-Scheme.xlsx)
