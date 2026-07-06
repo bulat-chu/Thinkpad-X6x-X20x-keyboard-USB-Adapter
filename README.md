@@ -30,7 +30,18 @@ To create your own keyboard layout, edit the `keymap.c` file. The keyboard matri
 
 ## Hints
 
-### 1. Flashing new QMK firmware
+### 1. If HID keys not working
+
+Linux:
+
+Download [`Linux-HWDB file`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/driver-or-hwdb-file/99-thinkpad-x20x-kbd-usb-c.hwdb)
+
+And put it into `/etc/udev/hwdb.d/`
+
+Windows:
+?
+
+### 2. Flashing new QMK firmware
 
 To flash a new firmware (`.uf2` file):
 
@@ -45,7 +56,7 @@ To flash a new firmware (`.uf2` file):
 qmk console
 ```
 
-### 2. Direct USB cable connection
+### 3. Direct USB cable connection
 
 You can connect a USB cable directly to the board using the following pads:
 
