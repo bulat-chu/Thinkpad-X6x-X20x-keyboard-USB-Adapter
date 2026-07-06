@@ -17,9 +17,6 @@
  * GP10 = TP DATA
  * GP11 = TP CLK
  * GP9  = LED CapsLock
-
-
- For ThinkPad like wakeup event (wakeup by pressing Fn or Power button) you have to modify ~/qmk_firmware/platforms/suspend.c file
  */
 
 // ---------------------------------------------------------------------------
@@ -27,6 +24,8 @@
 // ---------------------------------------------------------------------------
 
 static bool suspend_waiting_release = true;
+static bool trackpoint_enabled = true;
+
 
 enum custom_keycodes {
     NUM_TOG = SAFE_RANGE,  // toggle NumLock + layer 1
@@ -171,6 +170,18 @@ void suspend_wakeup_init_user(void) {
 void suspend_power_down_user(void) {
     wait_ms(10);
 }
+
+// ---------------------------------------------------------------------------
+// TrackPoint toggle
+// ---------------------------------------------------------------------------
+void ps2_mouse_moved_user(report_mouse_t *mouse_report) {
+    if (!trackpoint_enabled) {
+        mouse_report->x = 0;
+        mouse_report->y = 0;
+        mouse_report->v = 0;
+        mouse_report->h = 0;
+    }
+}
 // ---------------------------------------------------------------------------
 // process_record_user — custom_keycodes + debug
 // ---------------------------------------------------------------------------
@@ -203,9 +214,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             if (record->event.pressed) host_consumer_send(0x9C);
             else host_consumer_send(0);
             return false;
-        case CK_TPDTOG:
-            if (record->event.pressed) host_consumer_send(0xD4);
-            else host_consumer_send(0);
+
+//        case CK_TPDTOG:               //Toggle touchpad
+//            if (record->event.pressed) host_consumer_send(0xD4);
+//            else host_consumer_send(0);
+//            return false;
+
+        case CK_TPDTOG:                 //Toggle TrackPoint
+            if (record->event.pressed) {
+                trackpoint_enabled = !trackpoint_enabled;
+//                host_consumer_send(0xD4);
+//            } else {
+//                host_consumer_send(0);
+            }
             return false;
 
 
