@@ -17,11 +17,17 @@
  * GP10 = TP DATA
  * GP11 = TP CLK
  * GP9  = LED CapsLock
+
+
+ For ThinkPad like wakeup event (wakeup by pressing Fn or Power button) you have to modify ~/qmk_firmware/platforms/suspend.c file
  */
 
 // ---------------------------------------------------------------------------
 // Custom keycodes
 // ---------------------------------------------------------------------------
+
+static bool suspend_waiting_release = true;
+
 enum custom_keycodes {
     NUM_TOG = SAFE_RANGE,  // toggle NumLock + layer 1
     CK_SCRSVR,             // XF86ScreenSaver  consumer 0xA0
@@ -97,12 +103,34 @@ void keyboard_post_init_user(void) {
 // Fn → housekeeping
 // ---------------------------------------------------------------------------
 void housekeeping_task_user(void) {
-    bool fn = !gpio_read_pin(GP28);  // active LOW (INPUT_PULLUP)
-
+    // Fn
+    bool fn = !gpio_read_pin(GP28);             // active LOW (INPUT_PULLUP)
     if (fn) {
         if (!layer_state_is(2)) layer_on(2);
     } else {
         if (layer_state_is(2)) layer_off(2);
+    }
+
+    // Power button — длинное нажатие >1сек = KC_PWR, короткое = ничего
+    static uint32_t power_timer = 0;
+    static bool power_held = false;
+    static bool power_fired = false;
+
+    bool power = !gpio_read_pin(GP4);           // active LOW (INPUT_PULLUP
+
+    if (power && !power_held) {
+        power_held = true;
+        power_fired = false;
+        power_timer = timer_read32();
+    } else if (power && power_held && !power_fired) {
+        if (timer_elapsed32(power_timer) > 500) {
+            // Длинное нажатие — отправляем KC_PWR
+            tap_code(KC_PWR);                    //KC_PWR
+            power_fired = true;
+        }
+    } else if (!power && power_held) {
+        power_held = false;
+        // Короткое нажатие — ничего (или можно добавить действие)
     }
 }
 
@@ -122,15 +150,27 @@ bool led_update_user(led_t led_state) {
 // Suspend / wakeup
 // ---------------------------------------------------------------------------
 bool suspend_wakeup_condition_user(void) {
-    bool fn_pressed    = !gpio_read_pin(GP28);  // active LOW
-    bool power_pressed = !gpio_read_pin(GP4);   // active LOW
+    bool fn_pressed    = !gpio_read_pin(GP28);
+    bool power_pressed = !gpio_read_pin(GP4);
+
+    if (suspend_waiting_release) {
+        if (!fn_pressed && !power_pressed) {
+            suspend_waiting_release = false;
+        }
+        return false;
+    }
+
     return fn_pressed || power_pressed;
 }
 
 void suspend_wakeup_init_user(void) {
+    suspend_waiting_release = true;
     wait_ms(300);
 }
 
+void suspend_power_down_user(void) {
+    wait_ms(10);
+}
 // ---------------------------------------------------------------------------
 // process_record_user — custom_keycodes + debug
 // ---------------------------------------------------------------------------
