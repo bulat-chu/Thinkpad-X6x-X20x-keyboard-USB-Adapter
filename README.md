@@ -38,6 +38,10 @@ Linux:
 
 2. And put it into `/etc/udev/hwdb.d/`
 
+3. Update hwdb:
+`sudo systemd-hwdb update`
+`sudo udevadm trigger`
+
 Windows:
 ?
 
