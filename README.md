@@ -6,6 +6,8 @@ Currently, only the JIS layout is supported.
 
 To create your own keyboard layout, edit the `keymap.c` file. The keyboard matrix (row/column mapping) is provided in the `table-*.txt` files.
 
+Available to purchase on [`tindie`](https://www.tindie.com/products/43186)
+
 
 **1. QMK firmware source and build files:**
 [`Link-to-folder`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/QMK-Firmware/keyboards/Thinkpad_X201_kbd_USB-C)
