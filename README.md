@@ -4,8 +4,6 @@ This adapter is based on the RP2040 microcontroller and supports QMK firmware.
 
 Currently, only the JIS layout is supported.
 
-To create your own keyboard layout, edit the `keymap.c` file. The keyboard matrix (row/column mapping) is provided in the `table-*.txt` files.
-
 Available to purchase on [`tindie`](https://www.tindie.com/products/43186)
 
 
@@ -13,6 +11,8 @@ Available to purchase on [`tindie`](https://www.tindie.com/products/43186)
 [`Link-to-folder`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/QMK-Firmware/keyboards/Thinkpad_X201_kbd_USB-C)
 
 [`Modified suspend.c file fot ThinkPad like wakeup by pressing only Fn or Power button`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/QMK-Firmware/platforms/suspend.c)
+
+To create your own keyboard layout, edit the `keymap.c` file. The keyboard matrix (row/column mapping) is provided in the `table-*.txt` files.
 
 **2. Schematic**
 [`Circuit scheme file`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/Scheme-PCB/Thinkpad_X201_kbd_USB-C-Scheme.pdf)
