@@ -48,10 +48,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //       0           1           2           3           4           5           6           7           8           9           10          11          12          13          14          15
     /* 0 */ {KC_LALT,    KC_NO,      KC_UP,      KC_NO,      KC_NO,      KC_ESC,     KC_NO,      KC_NO,      KC_NO,      KC_F4,      KC_QUOT,    KC_G,       JP_HENK,    KC_F5,      KC_F6,      KC_H    },
     /* 1 */ {KC_NO,      KC_LCTL,    KC_HOME,    KC_NO,      KC_PGUP,    JP_ZKHK,    KC_INS,     KC_F1,      KC_DEL,     KC_F2,      KC_MINS,    KC_5,       KC_F8,      KC_F9,      JP_CIRC,    KC_6    },
-    /* 2 */ {KC_NO,      KC_NO,      KC_NO,      KC_LSFT,    KC_NO,      KC_TAB,     KC_NO,      KC_CAPS,    KC_VOLD,    KC_F3,      JP_AT,      KC_T,       KC_F7,      KC_BSPC,    JP_LBRC,    KC_Y    },
+    /* 2 */ {KC_NO,      KC_NO,      KC_NO,      KC_LSFT,    KC_NO,      KC_TAB,     KC_LGUI,    KC_CAPS,    KC_VOLD,    KC_F3,      JP_AT,      KC_T,       KC_F7,      KC_BSPC,    JP_LBRC,    KC_Y    },
     /* 3 */ {KC_SCRL,    KC_NO,      KC_NO,      KC_NO,      KC_LGUI,    KC_Q,       KC_NO,      KC_W,       KC_VOLU,    KC_E,       KC_P,       KC_R,       KC_O,       JP_YEN,     KC_I,       KC_U    },
     /* 4 */ {KC_RALT,    KC_NO,      KC_LEFT,    KC_NO,      KC_WFWD,    JP_MHEN,    KC_RGHT,    KC_NO,      KC_DOWN,    KC_NO,      KC_SLSH,    KC_B,       JP_KANA,    KC_SPC,     JP_BSLS,    KC_N    },
-    /* 5 */ {KC_NO,      KC_RCTL,    KC_PAUS,    KC_RSFT,    KC_WBAK,    KC_Z,       KC_NO,      KC_X,       KC_NO,      KC_C,       JP_RBRC,    KC_V,       KC_DOT,     KC_ENT,     KC_COMM,    KC_M    },
+    /* 5 */ {KC_NO,      KC_RCTL,    KC_PAUS,    KC_RSFT,    KC_WBAK,    KC_Z,       KC_NO,      KC_X,       KC_F20,      KC_C,       JP_RBRC,    KC_V,       KC_DOT,     KC_ENT,     KC_COMM,    KC_M    },
     /* 6 */ {KC_PSCR,    KC_NO,      KC_END,     KC_NO,      KC_PGDN,    KC_1,       KC_F12,     KC_2,       KC_F11,     KC_3,       KC_0,       KC_4,       KC_9,       KC_F10,     KC_8,       KC_7    },
     /* 7 */ {KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_APP,     KC_A,       KC_NO,      KC_S,       KC_MUTE,    KC_D,       KC_SCLN,    KC_F,       KC_L,       KC_NO,      KC_K,       KC_J    },
     },
