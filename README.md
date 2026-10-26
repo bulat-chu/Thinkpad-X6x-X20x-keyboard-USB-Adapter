@@ -26,9 +26,9 @@ To create your own keyboard layout, edit the `keymap.c` file. The keyboard matri
 
 ## Photos
 
-<br>![](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/photo/IMG_20260705_233229_1.jpg)
-<br>![](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/photo/IMG_20260705_233512_1.jpg)
-<br>![](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/photo/IMG_20260705_233740_1.jpg)
+<img width="3323" height="2467" alt="IMG_20261026_195923_1" src="https://github.com/user-attachments/assets/77983ad7-2e72-4ed1-8c8a-e2a483acea3c" />
+<img width="3938" height="2141" alt="IMG_20261026_201020_1" src="https://github.com/user-attachments/assets/010f44a9-ec19-4114-89ca-d163ca009c7b" />
+
 
 ## Hints
 
@@ -71,13 +71,17 @@ You can connect a USB cable directly to the board using the following pads:
 * `PWR (+5V)`
 * `GND`
 
-These pads are marked with arrows on the PCB.
+On Green PCB these pads are marked with arrows on the PCB.
+
+On Black PCB these pads are marked on the back side of the PCB.
 
 ### 3. Direct power button connection
 
 Connect the laptop's power button cable to the `PWR SW` and `GND` pads.
 
-These pads are marked with arrows on the PCB.
+On Green PCB these pads are marked with arrows on the PCB.
+
+On Black PCB these pads are marked on the back side of the PCB.
 
 **Note:** `PWR SW` is **active low**. Pressing the keyboard power button shorts the `PWR SW` pad to `GND`.
 
