@@ -16,7 +16,7 @@ Available to purchase on [`tindie`](https://www.tindie.com/products/43186)
 
 To create your own keyboard layout, edit the `keymap.c` file. The keyboard matrix (row/column mapping) is provided in the `table-*.txt` files.
 
-**2. Schematics and PCB files (EasyEDA)**
+**2. Schematics and PCB files (GERBER + EasyEDA)**
 [`Link-to-folder`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/Scheme-PCB/Black)
 
 
