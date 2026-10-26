@@ -8,20 +8,16 @@ Available to purchase on [`tindie`](https://www.tindie.com/products/43186)
 
 
 **1. QMK firmware source and build files:**
-[`Link-to-folder`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/QMK-Firmware/keyboards/Thinkpad_X201_kbd_USB-C)
+[`Link-to-folder`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/QMK-Firmware/keyboards/classic_thinkpad_kbd_usb_c)
 
 [`Modified suspend.c file fot ThinkPad like wakeup by pressing only Fn or Power button`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/QMK-Firmware/platforms/suspend.c)
 
+[`Default firmware`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/QMK-Firmware/Default_Firmware_classic_thinkpad_kbd_usb_c_default.uf2)
+
 To create your own keyboard layout, edit the `keymap.c` file. The keyboard matrix (row/column mapping) is provided in the `table-*.txt` files.
 
-**2. Schematic**
-[`Circuit scheme file`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/Scheme-PCB/Thinkpad_X201_kbd_USB-C-Scheme.pdf)
-
-**3. PCB layout**
-[`PCB layout - gerber files`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/Scheme-PCB/PCB-manufacturing-files)
-
-**4. PCB layout**
-[`BOM`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/blob/main/Scheme-PCB/BOM_Thinkpad_X201_kbd_USB-C-Scheme.xlsx)
+**2. Schematics and PCB files (EasyEDA)**
+[`Link-to-folder`](https://github.com/bulat-chu/Thinkpad-X6x-X20x-keyboard-USB-Adapter/tree/main/Scheme-PCB/Black)
 
 
 ## Photos
@@ -75,7 +71,7 @@ On Green PCB these pads are marked with arrows on the PCB.
 
 On Black PCB these pads are marked on the back side of the PCB.
 
-### 3. Direct power button connection
+### 4. Direct power button connection
 
 Connect the laptop's power button cable to the `PWR SW` and `GND` pads.
 
